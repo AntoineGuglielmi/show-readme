@@ -1,71 +1,51 @@
-# show-readme README
+# Show README
 
-This is the README for your extension "show-readme". After writing up a brief description, we recommend including the following sections.
+Cette extension Visual Studio Code affiche le contenu du README d'un package npm lorsque vous appuyez sur un raccourci clavier.
 
-## Features
+## Fonctionnalités
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Affiche le contenu du README d'un package npm dans une popup lorsque le curseur est placé sur le nom du package et que vous appuyez sur `Ctrl + Shift + Alt + Entrée`.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Installez l'extension depuis le [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+2. Ouvrez un projet contenant des fichiers JavaScript ou TypeScript.
+3. Placez le curseur sur le nom d'un package dans une ligne d'importation et appuyez sur `Ctrl + Shift + Alt + Entrée` pour afficher le contenu du README.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Utilisation
 
-## Requirements
+1. Ouvrez un fichier JavaScript ou TypeScript dans Visual Studio Code.
+2. Placez le curseur sur le nom d'un package dans une ligne d'importation, par exemple :
+```javascript
+   import axios from 'axios';
+   ```
+   3. Appuyez sur Ctrl + Shift + Alt + Entrée.
+4. Une popup apparaîtra avec le contenu du README du package.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Configuration
+Cette extension n'ajoute aucune configuration spécifique.
 
-## Extension Settings
+## Dépendances
+`axios` : Utilisé pour effectuer des requêtes HTTP pour récupérer le contenu du README depuis le registre npm.
+`marked` : Utilisé pour convertir le contenu Markdown du README en HTML.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Contribuer
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à cette extension, veuillez suivre ces étapes :
 
-For example:
+1. Forkez ce dépôt.
+2. Créez une branche pour votre fonctionnalité (git checkout -b feature/ma-fonctionnalité).
+3. Commitez vos modifications (git commit -am 'Ajout de ma fonctionnalité').
+4. Poussez votre branche (git push origin feature/ma-fonctionnalité).
+5. Ouvrez une Pull Request.
 
-This extension contributes the following settings:
+## Licence
+Cette extension est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Ce [README.md](http://_vscodecontentref_/1) inclut les sections suivantes :
+- **Fonctionnalités** : Décrit les fonctionnalités principales de l'extension.
+- **Installation** : Explique comment installer et utiliser l'extension.
+- **Utilisation** : Fournit des instructions détaillées sur l'utilisation de l'extension.
+- **Configuration** : Indique qu'il n'y a pas de configuration spécifique pour cette extension.
+- **Dépendances** : Liste les dépendances utilisées par l'extension.
+- **Contribuer** : Explique comment contribuer à l'extension.
+- **Licence** : Indique la licence sous laquelle l'extension est publiée.

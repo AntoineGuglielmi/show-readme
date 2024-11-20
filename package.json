@@ -1,8 +1,9 @@
 {
   "name": "show-readme",
-  "displayName": ".",
-  "description": "",
+  "displayName": "Show README",
+  "description": "Affiche le contenu du README d'un package",
   "version": "0.0.1",
+  "publisher": "antoineguglielmi",
   "engines": {
     "vscode": "^1.95.0"
   },
