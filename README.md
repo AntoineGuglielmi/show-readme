@@ -1,51 +1,40 @@
 # Show README
 
-Cette extension Visual Studio Code affiche le contenu du README d'un package npm lorsque vous appuyez sur un raccourci clavier.
+This Visual Studio Code extension displays the content of a package's README file when you hover over the package name.
 
-## Fonctionnalités
+## Features
 
-- Affiche le contenu du README d'un package npm dans une popup lorsque le curseur est placé sur le nom du package et que vous appuyez sur `Ctrl + Shift + Alt + Entrée`.
+- Displays the content of a package's README file in a popup when you hover over the package name in an import statement.
 
 ## Installation
 
-1. Installez l'extension depuis le [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
-2. Ouvrez un projet contenant des fichiers JavaScript ou TypeScript.
-3. Placez le curseur sur le nom d'un package dans une ligne d'importation et appuyez sur `Ctrl + Shift + Alt + Entrée` pour afficher le contenu du README.
+1. Install the extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+2. Open a project containing JavaScript or TypeScript files.
+3. Hover over the name of a package in an import statement to display the content of the README file.
 
-## Utilisation
+## Usage
 
-1. Ouvrez un fichier JavaScript ou TypeScript dans Visual Studio Code.
-2. Placez le curseur sur le nom d'un package dans une ligne d'importation, par exemple :
+1. Open a JavaScript or TypeScript file in Visual Studio Code.
+2. Hover over the name of a package in an import statement, for example:
 ```javascript
-   import axios from 'axios';
-   ```
-   3. Appuyez sur Ctrl + Shift + Alt + Entrée.
-4. Une popup apparaîtra avec le contenu du README du package.
+import axios from 'axios';
+```
+3. A popup will appear with the content of the package's README file.
 
-## Configuration
-Cette extension n'ajoute aucune configuration spécifique.
+## Dependencies
 
-## Dépendances
-`axios` : Utilisé pour effectuer des requêtes HTTP pour récupérer le contenu du README depuis le registre npm.
-`marked` : Utilisé pour convertir le contenu Markdown du README en HTML.
+- axios: Used to make HTTP requests to fetch the README content from the npm registry.
+- marked: Used to convert the Markdown content of the README to HTML.
 
-## Contribuer
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à cette extension, veuillez suivre ces étapes :
+## Contributing
 
-1. Forkez ce dépôt.
-2. Créez une branche pour votre fonctionnalité (git checkout -b feature/ma-fonctionnalité).
-3. Commitez vos modifications (git commit -am 'Ajout de ma fonctionnalité').
-4. Poussez votre branche (git push origin feature/ma-fonctionnalité).
-5. Ouvrez une Pull Request.
+Contributions are welcome! If you would like to contribute to this extension, please follow these steps:
 
-## Licence
-Cette extension est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+1. Fork this repository.
+2. Create a branch for your feature (git checkout -b feature/my-feature).
+3. Commit your changes (git commit -am 'Add my feature').
+4. Push your branch (git push origin feature/my-feature).
+5. Open a Pull Request.
 
-Ce [README.md](http://_vscodecontentref_/1) inclut les sections suivantes :
-- **Fonctionnalités** : Décrit les fonctionnalités principales de l'extension.
-- **Installation** : Explique comment installer et utiliser l'extension.
-- **Utilisation** : Fournit des instructions détaillées sur l'utilisation de l'extension.
-- **Configuration** : Indique qu'il n'y a pas de configuration spécifique pour cette extension.
-- **Dépendances** : Liste les dépendances utilisées par l'extension.
-- **Contribuer** : Explique comment contribuer à l'extension.
-- **Licence** : Indique la licence sous laquelle l'extension est publiée.
+## License
+This extension is licensed under the MIT License. See the LICENSE file for more details.
