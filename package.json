@@ -15,13 +15,9 @@
     "onLanguage:typescript"
   ],
   "main": "./dist/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "show-readme.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antoineguglielmi/show-readme.git"
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
